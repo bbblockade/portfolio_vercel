@@ -92,6 +92,7 @@ export default function Page() {
                 title={education.school}
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
+                description={education.description}
               />
             </BlurFade>
           ))}
@@ -152,7 +153,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -164,12 +165,12 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
+                  { During my time in university, I attended{" "}
                   {DATA.hackathons.length}+ hackathons. People from around the
                   country would come together and build incredible things in 2-3
                   days. It was eye-opening to see the endless possibilities
                   brought to life by a group of motivated and passionate
-                  individuals.
+                  individuals. }
                 </p>
               </div>
             </div>
@@ -195,31 +196,45 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      */}
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
+            <div className="space-y-6">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
               </div>
+
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Get in Touch
               </h2>
+
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                I’m currently based in Melbourne and open to new opportunities or collaborations. 
+                Feel free to reach out via{" "}
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href="mailto:chenjiqiang0305@gmail.com"
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  email
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                or connect with me on{" "}
+                <Link
+                  href="https://www.linkedin.com/in/jiqiang-chen-47583a28a/"
+                  className="text-blue-500 hover:underline"
+                >
+                  LinkedIn
+                </Link>
+                . Always down to chat about tech, ML, or just grab a coffee if you’re around.
               </p>
             </div>
           </BlurFade>
         </div>
       </section>
+
+
+
+
     </main>
   );
 }
