@@ -159,6 +159,7 @@ export const DATA = {
         },
       ],
       image: "/project/kaggle_fraud.png", 
+      video: null
     }
     
 
