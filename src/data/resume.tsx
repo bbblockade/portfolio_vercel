@@ -125,7 +125,7 @@ export const DATA = {
       school: "Univerity high school",
       href: "https://unihigh.vic.edu.au",
       degree: "VCE",
-      logoUrl: "/Unihighlogo.jpg",
+      logoUrl: "/unihighlogo.jpg",
       start: "2017",
       end: "2019",
       description: "ATAR: 97.3"
