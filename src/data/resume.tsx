@@ -122,7 +122,7 @@ export const DATA = {
       description: "Grade: H1(80.7), Focused on mathematics, statistics, and programming."
     },
     {
-      school: "University high school",
+      school: "University High School",
       href: "https://unihigh.vic.edu.au",
       degree: "VCE",
       logoUrl: "/unihighlogo.png",
