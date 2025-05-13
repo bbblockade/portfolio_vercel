@@ -78,7 +78,6 @@ export const DATA = {
     {
       company: "University of Melbourne",
       href: "https://unimelb.edu.au",
-      badges: [],
       location: "Parkville, Melbourne, Australia",
       title: "Teaching Assistant",
       logoUrl: "/unimelb.svg",
