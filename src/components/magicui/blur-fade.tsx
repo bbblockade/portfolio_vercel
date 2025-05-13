@@ -31,7 +31,8 @@ const BlurFade = ({
   const ref = useRef<HTMLDivElement>(null);
   const inViewResult = useInView(ref, {
     once: true,
-    margin: inViewMargin as unknown as IntersectionObserverInit["rootMargin"],
+    margin: (inViewMargin ?? "0px 0px -50px 0px") as unknown as IntersectionObserverInit["rootMargin"],
+   
   });
   
   
