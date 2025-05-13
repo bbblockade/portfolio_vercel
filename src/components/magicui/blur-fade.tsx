@@ -29,12 +29,7 @@ const BlurFade = ({
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const inViewResult = useInView(ref, {
-    once: true,
-    margin: (inViewMargin ?? "0px 0px -50px 0px") as unknown as IntersectionObserverInit["rootMargin"],
-   
-  });
-  
+  const inViewResult = useInView(ref, { once: true, margin: inViewMargin ?? "-50px" });
   
   const isInView = !inView || inViewResult;
   const defaultVariants: Variants = {
